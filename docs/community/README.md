@@ -14,7 +14,7 @@ The repository files under `.github/` are the durable part of the community setu
 | Contributing guide | `CONTRIBUTING.md` | Conventions, commit format, and where each kind of post belongs |
 | License | `LICENSE` | MIT |
 | Welcome discussion | [Discussion #1](https://github.com/Axelthebat/Axelthebat/discussions/1) | Created in Announcements |
-| Sponsors tiers | `.github/sponsors.yml` | Requires the Sponsors profile to be activated in settings |
+| Sponsors tiers | `.github/sponsors.yml` | Reference only. The live tiers live in the Sponsors dashboard. |
 | Private vulnerability reporting | Repository > Settings > Security | Enabled |
 
 ## Manual steps remaining
@@ -47,3 +47,21 @@ The categories are created by GitHub with these default emoji:
 ## Verifying
 
 After the manual steps, `POST /repos/Axelthebat/Axelthebat/discussions` with a `category_id` returns a rendered form instead of a plain text box, which confirms the category forms were picked up.
+
+## GitHub Sponsors
+
+The account does not have a GitHub Sponsors profile yet, so the tiers in `.github/sponsors.yml` are not published. Creating tiers through the API fails with `Axelthebat does not have a GitHub Sponsors profile`.
+
+Enrolling is a manual process, and it requires:
+
+1. Two-factor authentication enabled on the account
+2. A completed Sponsors profile at https://github.com/sponsors/Axelthebat
+3. Tax and bank details submitted
+
+Once enrolled, create the tiers from the Sponsors dashboard, using the amounts in `.github/sponsors.yml` as the reference. The dashboard is the source of truth from then on, and the YAML file can be deleted or kept as a record of the original intent.
+
+Add `.github/FUNDING.yml` only after the Sponsors profile is live, otherwise the Sponsor button leads to a page that does not exist:
+
+```yaml
+github: Axelthebat
+```
