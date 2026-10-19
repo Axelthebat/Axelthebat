@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question
+    url: https://github.com/Axelthebat/Axelthebat/discussions/new?category=q-a
+    about: Questions about a tool, a stack, or a security concept belong in Discussions.
+  - name: Propose an idea
+    url: https://github.com/Axelthebat/Axelthebat/discussions/new?category=ideas
+    about: Feature requests and design proposals for anything I am building.
+  - name: Show and tell
+    url: https://github.com/Axelthebat/Axelthebat/discussions/new?category=show-and-tell
+    about: Share your homelab, tool, CTF write-up, or lab setup.
+  - name: Report a vulnerability
+    url: https://github.com/Axelthebat/Axelthebat/blob/main/SECURITY.md
+    about: Report security issues privately. Do not open a public issue for a vulnerability.

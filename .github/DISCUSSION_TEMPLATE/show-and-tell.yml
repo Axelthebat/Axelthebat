@@ -1,0 +1,57 @@
+title: ""
+labels: ["show-and-tell"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Show and tell
+
+        Share what you built:
+
+        - A homelab, a home network, a rack, or a server setup
+        - A tool or script you wrote
+        - A CTF write-up, a lab, or a capture-the-flag setup
+        - A network topology you are happy with
+        - A postmortem, or a config that took you a weekend to get right
+        - A talk you gave, or a post you wrote
+
+        Screenshots and terminal output are welcome. The part that broke is usually the more useful half.
+  - type: input
+    id: project
+    attributes:
+      label: Project name
+      description: What should I call it?
+      placeholder: e.g. My BGP lab
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What it is
+      description: What it does, how it works, and what you learned building it.
+    validations:
+      required: true
+  - type: textarea
+    id: stack
+    attributes:
+      label: Stack and hardware
+      description: Languages, tools, switches, boards, hypervisors, cloud providers.
+      placeholder: |
+        Software: Proxmox VE 8, FRRouting, eBGP over WireGuard
+        Hardware: Mini PC (i3-12100), 2x TP-Link EAP670
+    validations:
+      required: false
+  - type: input
+    id: link
+    attributes:
+      label: Repository or blog post
+      description: Optional link to the code or the write-up.
+    validations:
+      required: false
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Before posting
+      options:
+        - label: I removed credentials, tokens, and real internal IPs from any screenshots
+          required: true

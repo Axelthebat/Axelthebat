@@ -1,0 +1,59 @@
+title: ""
+labels: ["announcement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Announcements
+
+        Release notes, project news, and status updates. This category is announcement-only. Move the discussion to General or Q&A.
+
+        Changelog entries usually look like this:
+
+        ### v0.2.0 - 2026-10-19
+
+        **Added**
+        - Support for `--format json` output
+        - Linux and ARM64 release artifacts
+
+        **Fixed**
+        - Panic on an empty config file
+
+        **Changed**
+        - Minimum supported Rust version is now 1.78
+  - type: input
+    id: version
+    attributes:
+      label: Version or headline
+      description: For example v0.2.0, or the name of a new project.
+      placeholder: v0.2.0
+    validations:
+      required: true
+  - type: textarea
+    id: changelog
+    attributes:
+      label: Changelog
+      description: Use the Added, Fixed, Changed, Removed, and Security sections.
+      value: |
+        ### Added
+        -
+        ### Fixed
+        -
+        ### Changed
+        -
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Release or release notes URL
+      description: Optional link to the tag, the release page, or the changelog file.
+    validations:
+      required: false
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Before posting
+      options:
+        - label: I removed credentials, tokens, and real internal IPs from any logs or screenshots
+          required: true

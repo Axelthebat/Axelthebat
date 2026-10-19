@@ -67,13 +67,20 @@ My main area is cybersecurity, alongside **networking, Linux, cloud infrastructu
 
 ## Open source and side projects
 
-I enjoy using my free time to build projects, experiment with ideas, improve existing tools, and contribute to open source. I'm always interested in learning from other developers and collaborating on projects that solve real problems.
-
-Feel free to explore my repositories and follow along as I publish more work here.
+I build tools in my free time, contribute to existing projects, and document what I learn along the way. Everything here is side-project work outside my day job, so I work on it in the evenings and on weekends.
 
 ## Contact
 
-Have an open-source idea, a cybersecurity topic to discuss, or an interesting project to build? Reach me through [GitHub](https://github.com/Axelthebat) or open a discussion in one of my repositories.
+The fastest way to reach me is [Discussions](https://github.com/Axelthebat/Axelthebat/discussions).
+
+| I want to | Open a discussion in |
+|---|---|
+| Ask a question about a tool or a stack | [Q&A](https://github.com/Axelthebat/Axelthebat/discussions/new?category=q-a) |
+| Propose a feature or a design | [Ideas](https://github.com/Axelthebat/Axelthebat/discussions/new?category=ideas) |
+| Share a homelab, a tool, or a write-up | [Show and tell](https://github.com/Axelthebat/Axelthebat/discussions/new?category=show-and-tell) |
+| Report a vulnerability | [Security policy](https://github.com/Axelthebat/Axelthebat/blob/main/SECURITY.md), privately |
+
+Bugs go to [Issues](https://github.com/Axelthebat/Axelthebat/issues). Pull requests are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md) and the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 <div align="center">
   <i>Stay curious. Build useful things. Keep systems secure.</i>

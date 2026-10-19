@@ -1,0 +1,65 @@
+title: "[Idea] "
+labels: ["idea", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Ideas
+
+        Feature requests, design proposals, and disagreements about how something should work.
+
+        Four things make an idea easy to act on:
+
+        - **The problem it solves.** Not "add a flag", but what breaks today.
+        - **Who it is for.** Just you, or every user of the tool.
+        - **Rough scope.** A weekend patch, or a rewrite.
+        - **Whether you will implement it.** Pull requests are welcome and I review them.
+
+        I read every idea. The ones that do not make it into the tool get a reason.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve
+      description: Describe the pain point, not only the proposed solution.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What you would like to see. Include the CLI syntax or API shape if you have one in mind.
+      placeholder: |
+        batgrep --format json --include '*.toml'
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which area
+      options:
+        - Core functionality
+        - CLI and UX
+        - Performance
+        - Security
+        - Documentation
+        - CI and release process
+        - New platform or runtime
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you considered
+      description: Workarounds, other tools, or why this has to be built rather than configured.
+    validations:
+      required: false
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Contribution
+      options:
+        - label: I am willing to send a pull request for this
+          required: false
+        - label: I searched for an existing issue or discussion covering this
+          required: true
