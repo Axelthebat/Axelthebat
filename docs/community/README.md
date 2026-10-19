@@ -50,17 +50,52 @@ After the manual steps, `POST /repos/Axelthebat/Axelthebat/discussions` with a `
 
 ## GitHub Sponsors
 
-The account does not have a GitHub Sponsors profile yet, so the tiers in `.github/sponsors.yml` are not published. Creating tiers through the API fails with `Axelthebat does not have a GitHub Sponsors profile`.
+Brazil is a supported region for GitHub Sponsors, so the account is eligible to receive payouts. Enrollment is a manual process with four steps:
 
-Enrolling is a manual process, and it requires:
+| Step | Where | State |
+|---|---|---|
+| 1. Two-factor authentication | Account settings | Done |
+| 2. Sponsors profile | https://github.com/sponsors/Axelthebat | Pending |
+| 3. Tax information | Sponsors dashboard, via Stripe | Pending |
+| 4. Bank information | Sponsors dashboard, via Stripe | Pending |
 
-1. Two-factor authentication enabled on the account
-2. A completed Sponsors profile at https://github.com/sponsors/Axelthebat
-3. Tax and bank details submitted
+Until step 2 is finished, `https://github.com/sponsors/Axelthebat` redirects to the profile overview, and the API rejects tier creation with `Axelthebat does not have a GitHub Sponsors profile`.
 
-Once enrolled, create the tiers from the Sponsors dashboard, using the amounts in `.github/sponsors.yml` as the reference. The dashboard is the source of truth from then on, and the YAML file can be deleted or kept as a record of the original intent.
+### Step 2: profile fields
 
-Add `.github/FUNDING.yml` only after the Sponsors profile is live, otherwise the Sponsor button leads to a page that does not exist:
+**Short description** (90 characters, limit 100):
+
+> Security tooling, Linux and networking. Open-source security tools in Rust, Go and Python.
+
+**Full description** (506 characters, limit 1000):
+
+> I build open-source security tooling around Linux, networks and cloud infrastructure.
+>
+> The work is small, sharp tools that solve a concrete problem: auditing Kubernetes manifests against CIS benchmarks, checking Linux hardening baselines, observing network traffic with eBPF, and Terraform modules for reproducible cloud infrastructure.
+>
+> Everything I maintain is MIT licensed and built in the open. If one of these tools saves you an afternoon, sponsorship keeps the coffee flowing and the homelab humming.
+
+Set the featured item to the profile repository, `Axelthebat/Axelthebat`, and publish the profile.
+
+### Steps 3 and 4
+
+Stripe collects the tax and bank details. The bank account country must match the country of residence, and the identity details are difficult to change after submission, so check them before confirming. If a personal bank account is not an option, a fiscal host such as the Open Source Collective can receive the funds and pay them out.
+
+### Tiers
+
+Create these from the Sponsors dashboard, or through the `createSponsorsTier` GraphQL mutation once the profile is public:
+
+| Amount | Description |
+|---|---|
+| $5 per month | Covers a coffee for a late night debugging session. |
+| $25 per month | Keeps the homelab running and the coffee stock full. |
+| $100 per month | Funds a full weekend of building open-source security tooling. |
+
+The dashboard is the source of truth once the tiers exist. `.github/sponsors.yml` keeps the original intent and can be deleted or left as a record.
+
+### Sponsor button
+
+Add `.github/FUNDING.yml` only after the profile is live, otherwise the Sponsor button leads to a page that does not exist:
 
 ```yaml
 github: Axelthebat
