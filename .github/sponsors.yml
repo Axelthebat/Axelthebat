@@ -1,0 +1,15 @@
+tiers:
+  - amount: 5
+    name: Bat friend
+    description: Covers the cost of a coffee for a late night debugging session.
+  - amount: 25
+    name: Bat cave
+    description: Keeps the homelab running and the coffee stock full.
+  - amount: 100
+    name: Golden bat
+    description: Funds a full weekend of building open-source security tooling.
+
+custom:
+  - amount: 10
+    name: Roost
+    description: Anything in between, for the tools and the late nights.
