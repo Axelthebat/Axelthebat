@@ -82,6 +82,8 @@ The fastest way to reach me is [Discussions](https://github.com/Axelthebat/Axelt
 
 Bugs go to [Issues](https://github.com/Axelthebat/Axelthebat/issues). Pull requests are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md) and the [Code of Conduct](CODE_OF_CONDUCT.md).
 
+I also write about what I build at [axelthebat.github.io](https://axelthebat.github.io).
+
 <div align="center">
   <i>Stay curious. Build useful things. Keep systems secure.</i>
   <br />
