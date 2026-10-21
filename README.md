@@ -36,6 +36,16 @@ My main area is cybersecurity, alongside **networking, Linux, cloud infrastructu
   </table>
 </div>
 
+## What I'm building
+
+| Project | What it does | Stack |
+|---|---|---|
+| [macosvm](https://github.com/Axelthebat/macos-vm-manager) | Open manager for macOS VMs on Linux, on top of the reims-vgpu virtual GPU | Python, Bash, KVM |
+| [axelthebat.github.io](https://axelthebat.github.io) | This site and the design notes behind it | HTML, CSS, JavaScript |
+| k8s-audit | Audits Kubernetes manifests against a hardening baseline | Go, Rust |
+
+The two that exist are MIT licensed and built in the open. The reasoning behind them is written down at [axelthebat.github.io](https://axelthebat.github.io).
+
 ## Technologies
 
 ### Cybersecurity, cloud and infrastructure
